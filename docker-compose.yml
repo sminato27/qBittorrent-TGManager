@@ -5,5 +5,5 @@ services:
     env_file:
       - .env
     volumes:
-      - ./bot:/bot
+      - ./bot:/bot_data
     restart: unless-stopped

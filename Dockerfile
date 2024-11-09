@@ -5,8 +5,8 @@ RUN pip install python-telegram-bot qbittorrent-api psutil pyrogram tgcrypto
 
 # Copia o script e as variáveis de ambiente para o contêiner
 WORKDIR /bot
-COPY bot.py .
-COPY .env .
+COPY bot.py /bot/
+COPY .env /bot/
 
 # Executa o script
-CMD ["python", "bot.py"]
+CMD ["python", "/bot/bot.py"]
