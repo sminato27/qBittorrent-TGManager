@@ -5,9 +5,5 @@ services:
     env_file:
       - .env
     volumes:
-      - bot_data:/bot
+      - ./bot:/bot
     restart: unless-stopped
-
-volumes:
-  bot_data:
-     driver: local
